@@ -6,7 +6,7 @@
 
   <remote  name="rve"
            fetch="https://github.com/Rve27"
-           revision="lineage-23.0-staging" />
+           revision="lineage-23.1" />
 
  <!-- Common -->
   <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="rve"/>
@@ -33,8 +33,8 @@
   </project>
 
  <!-- Hardware - display-commonsys-intf -->
-  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom"/>
-  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom"/>
+  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="lineage-23.1"/>
+  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="lineage-23.1"/>
 
  <!-- Hardware - LA.UM.8.6.2 -->
   <project path="hardware/mithorium/display/LA.UM.8.6.2.r1-09500-89xx.0/display" name="android_hardware_qcom_display_mithorium" groups="device" remote="mi-thorium" revision="mithorium/LA.UM.8.6.2.r1-09500-89xx.0"/>
@@ -71,7 +71,4 @@
 
  <!-- Tiare - Kernel 4.19 -->
   <project path="device/xiaomi/Tiare_4_19" name="android_device_xiaomi_Tiare_4_19" groups="device" remote="mi-thorium" revision="a11/master"/>
-
- <!-- RvKernel -->
-  <project path="kernel/xiaomi/mithorium-4.19/kernel" name="android_kernel_xiaomi_msm8937" clone-depth="1" sync-s="true" remote="rve" />
 </manifest>
